@@ -1,2 +1,2 @@
-resource_group_name = "rg-ado-terraform-demo-01"
+resource_group_name = "rg-ado-terraform-sukh-01"
 location            = "Central India"
