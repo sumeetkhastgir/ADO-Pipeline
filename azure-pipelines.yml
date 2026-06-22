@@ -7,12 +7,13 @@ pool:
 steps:
 
 - task: AzureCLI@2
-  displayName: Azure Login
+  displayName: Show Subscription
   inputs:
     azureSubscription: 'azure-svc'
     scriptType: 'ps'
     scriptLocation: 'inlineScript'
     inlineScript: |
+      Write-Host "===== CURRENT AZURE ACCOUNT ====="
       az account show
 
 - powershell: |
