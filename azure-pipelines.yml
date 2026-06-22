@@ -26,3 +26,7 @@ steps:
 - powershell: |
     terraform plan -out=tfplan
   displayName: Terraform Plan
+
+- powershell: |
+    terraform apply -auto-approve tfplan
+  displayName: Terraform Apply
